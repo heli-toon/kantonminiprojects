@@ -1,0 +1,23 @@
+{
+    "name":"HTML Quompiler",
+    "short_name":"HTML Quompiler",
+    "start_url":".",
+    "background_color": "#EC912D",
+    "theme_color": "#E37A26",
+    "description":"This is an installable HTML Complier for All Devices",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"images/iconh_192x192.png",
+            "type": "image/png",
+            "sizes":"192x192",
+            "purpose":"maskable any"
+        },
+        {
+            "src":"images/iconh_2_512x512.png",
+            "type": "image/png",
+            "sizes":"512x512",
+            "purpose":"maskable any"
+        }
+    ]
+}

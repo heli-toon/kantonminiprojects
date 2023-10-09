@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('Gotham\ Rounded\ Medium.otf');
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url('Consolas.TTF');
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Gotham Rounded', system-ui, sans-serif;
+}
+body{
+    animation: blur 1s ease;
+    display: flex;
+}
+
+@keyframes blur {
+    0% {filter: blur(5px);}
+    100% {}
+  }
+.editor-menu{
+    width: 100%;
+    height: 6rem;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px 10px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Gotham Rounded';
+    font-weight: 500;
+    padding: 8px 7px !important;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    margin-right: 8px;
+    color: #fff;
+    min-width: 5rem;
+    transition: all 1s ease-in-out;
+}
+
+.btn:hover{background-color: orangered;}
+
+.live{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color:#E62E2D;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.live > *{
+    cursor: pointer; 
+}
+.btn-run{
+    background-color: purple;
+}
+.toggler{
+    background-color: #31AD30;
+}
+.btn-install{
+    background-color: mediumpurple;
+}
+.btn-download{
+    background-color: #357ae3;
+}
+.btn-download:hover{
+    background-color: orangered;
+}
+.container{
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    top: 7rem;
+    width: 100%;
+    display: flex;
+}
+
+.left, .right{
+    height: 100%;
+    width: 49.2%;
+    border: 1px solid #d5d5d5;
+    border-radius: 0.5rem;
+}
+.bar{
+    width: 5px;
+    height: 100%;
+    background-color: #eee;
+    cursor: w-resize;
+}
+
+.left{
+    font-family: Consolas, sans-serif;
+    font-size: 1.6rem;
+}
+.container .right{
+    margin-right: 24px;
+    flex: 1;
+}
+
+.editor{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    outline: none;
+    padding: 1rem 0 0 1rem;
+    border-color: #ccc;
+    overflow-y: auto;
+    transition: 1s;
+    background-color: #eee;
+    color: black;
+}
+
+.dark-mode {
+    background: #363836 !important;
+    color: #eee;
+  }
+  
+.iframe{
+    width: 95%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    white-space: pre;
+    padding: 4px;
+}

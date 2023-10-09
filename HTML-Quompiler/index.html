@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#E37A26">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Quompiler is site that provides an HTML Compiler on a mobile device">
+    <link rel="shortcut icon" href="images/iconh.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/iconh.png" type="image/png">
+    <title>HTML Quompiler</title>
+</head>
+<body>
+    <nav class="editor-menu" id="nav">
+        <button class="btn toggler" id="toggle-button" title="Switches Editor Theme">Dark Mode</button>
+        <button class="btn btn-run" title="Run the Code"><!--<i class="fas fa-play" aria-hidden="true"></i>-->Run</button>
+        <button class="btn btn-download" title="Download your code" onclick="download()">Download</button>
+        <button class="btn install" id="download-button" title="Install Now" >Install PWA</button>
+        <div class="btn live" title="Auto-Run as you type">
+            <label for="live">Live</label>
+            <input type="checkbox" name="Live Compiler" id="live">
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="left">
+            <div class="editor" contenteditable id="mode-division" spellcheck="false"></div>
+        </div>
+        <div class="bar" title="Drag to resize"></div>
+        <div class="right">
+            <iframe src="" frameborder="0" class="iframe" id="iframe" title="Your Compiled Output"></iframe>
+        </div>
+    </main>
+    
+    <script src="js/script.js" type="text/javascript" defer></script>
+    <script src="serviceWorker.js"></script>
+</body>
+</html>
+
+<!-- 
+    TODO: * Add line numbers
+    TODO: * Add text formatting
+ -->
