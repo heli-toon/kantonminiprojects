@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Have endless fun with this simple but fun balls popping game">
+    <title>Ball Blaster 2</title>
+    <script src="js/matter.js"></script>
+    <script src="js/soundjs.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="js/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="js/favicon.png">
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <span id="checkbowaudio"><i class="bi-volume-up"></i></span>
+        <div id="rules">Rules<br><br>
+            <span class="inforules">Select at least three balls of<br> the same color<br> that are touching</span><br>
+            <span  class="inforules">Big Bonus: 8 Balls minimum</span>
+            <span  class="inforules">⭐️: Surprise time bonus</span><br><br><br>
+            <span>Click / Tap to Start</span>
+        </div>
+        <div id="timegame"></div>
+        <div id="play_pause"><i class="bi-pause"></i></div>
+        <div id="info">0</div>
+        <span id="Fps"><i>fps</i><span id="nbrfps"></span></span>
+        <div id="endgame">Game Over <br><br>
+            <span id="bestscore"></span>
+            <span id="score"></span><br><br><br>
+            <span>Tap to Restart</span>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+<script src="serviceWorker.js"></script>
+</html>

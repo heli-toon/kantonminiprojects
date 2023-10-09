@@ -1,0 +1,29 @@
+{
+    "name":"Balls Blaster 2",
+    "short_name":"Balls Blaster",
+    "start_url":".",
+    "background_color": "#000",
+    "theme_color": "#252525",
+    "description":"Have endless fun with this simple but fun balls popping game.",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"js/favicon.png",
+            "type": "image/png",
+            "sizes":"128x128",
+            "purpose":"maskable any"
+        },
+        {
+            "src":"js/favicon_192x192.png",
+            "type": "image/png",
+            "sizes":"192x192",
+            "purpose":"maskable any"
+        },
+        {
+            "src":"js/favicon_512x512.png",
+            "type": "image/png",
+            "sizes":"512x512",
+            "purpose":"maskable any"
+        }
+    ]
+}
