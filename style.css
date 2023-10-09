@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', system-ui, sans-serif;
+    background-color: #363638;
+    color: var(--text);
+    background: var(--bg);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    overflow-x: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+a:hover{
+    color: aquamarine;
+}
+header{
+    padding: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+header h1{
+    color: mediumpurple;
+}
+.navbar{
+    height: 4.5rem;
+    width: 100%;
+    /* background: var(--bg-nav); */
+    color: var(--text);
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+/* Themes */
+:root {
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5: #2a2e35;
+    --gray6: #12181b;
+    --purple: #a82dd1;
+}
+
+.dark {
+    --bg: var(--gray5);
+    --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+    --bg-dropdown: var(--gray6);
+    --text: var(--gray0);
+    --border-color: var(--purple);
+    --bg-solar: var(--blue);
+}
+
+#dark::before {
+    background: #2a2e35;
+}
+
+img{
+    margin: 2em 0 0;
+    width: 180px;
+    height: 180px;
+}
+.content{
+    width: 100%;
+    display: flex;
+    min-height: 60vh;
+}
+
+.row{
+    margin-right:-15px;
+    margin-left:-15px;
+}
+
+.line-bar {
+    color: #d9d9d9;
+    display: block;
+    font-size: 5em;
+    line-height: 0;
+}
+
+.col-lg-3, .col-md-6{
+    position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+    display: flex;
+}
+@media (min-width:1200px){
+    .col-lg-3{
+        float:left;
+        width:25%;
+    }
+}
+
+@media (min-width:992px){
+    .col-md-6{
+        float:left;
+        width:25%;
+    }
+}
+
+.icon-box {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 60px 30px;
+    background: rgba(42, 46, 53, .5);
+    margin: 3em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.icon-box h3 {
+    margin-bottom: 15px;
+    color: mediumpurple;
+}
+
+.icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+.icon-box a{
+    background: mediumpurple;
+    padding: .75em;
+    border-radius: 1.3em;
+    transition: all 500ms ease;
+}
+.icon-box a:hover{
+    background: #2a2e35;
+}
