@@ -16,7 +16,7 @@ let W, H, c, ctx, mouse, touch, lastTimeCalled
 let ground, left, right, marginBorder = 20, rad;
 let move = false, lastSelected = null, gamePlay = true, checkBoxAudio = true, effetBigBoom = false, pause = false;
 let circles = [], booms = [], arrBonus = [], same = []
-let nbrTime = 301,countPoints = 0, bestScore = 0,  progress = 0
+let nbrTime = 91,countPoints = 0, bestScore = 0,  progress = 0
 const colors = ['#FF1818', '#F4E104', '#029DFF','#E018FF'] //, '00C896', '#EC912D' Other colors
 const srcSoundSelect = "../sounds/selected.mp3"
 const srcSoundBoom = "../sounds/sbomb.mp3"
@@ -220,7 +220,7 @@ const checkBoom = () => {
             }
         }
         if(sameLength>7){
-            nbrTime += 15
+            nbrTime += 10
             arrBonus.push(new Bonus(W/2,H/2,rad*2,10))
             effetBigBoom = true
             setTimeout(()=>{
