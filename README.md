@@ -1,2 +1,3 @@
 # kantonminiprojects
-All of my mini projects bundled into on
+
+My Mini-projects Saga
