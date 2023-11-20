@@ -1,0 +1,29 @@
+{
+    "name":"Ballance Lengends",
+    "short_name":"Ballance",
+    "start_url":".",
+    "background_color": "#000",
+    "theme_color": "#E20000",
+    "description":"In Ballance, you control a ball and try to keep it from falling off the space platform. The game is simple to play but challenging to master.",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"favicon.png",
+            "type": "image/png",
+            "sizes":"128x128",
+            "purpose":"maskable any"
+        },
+        {
+            "src":"favicon_192x192.png",
+            "type": "image/png",
+            "sizes":"192x192",
+            "purpose":"maskable any"
+        },
+        {
+            "src":"favicon_512x512.png",
+            "type": "image/png",
+            "sizes":"512x512",
+            "purpose":"maskable any"
+        }
+    ]
+}
