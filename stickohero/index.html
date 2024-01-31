@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#B9D390" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Be the stick hero! Save the stickman by creating a safe platform for the stickman to walk across." />
+    <title>Stick O'Hero</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="96x96" href="favicon.png" />
+    <base href="/">
+  </head>
+  <body>
+    <main class="container">
+      <div id="score"></div>
+      <canvas id="game" width="375" height="375"></canvas>
+      <div id="introduction">Hold down to stretch out a stick</div>
+      <div id="perfect">DOUBLE SCORE</div>
+      <button type="button" id="restart">RESTART</button>
+      <div id="scoresbox">
+        <p id="highscore">High Score:</p>
+        <p id="scorenow"></p>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+  <script src="sw.js"></script>
+</html>

@@ -1,0 +1,29 @@
+{
+    "name":"Stick O'Hero",
+    "short_name":"Stick O'Hero",
+    "start_url":".",
+    "background_color": "#659F1C",
+    "theme_color": "#B9D390",
+    "description":"Be the stick hero! Save the stickman by creating a safe platform for the stickman to walk across.",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"favicon.png",
+            "type": "image/png",
+            "sizes":"96x96",
+            "purpose":"maskable any"
+        },
+        {
+            "src":"favicon_192x192.png",
+            "type": "image/png",
+            "sizes":"192x192",
+            "purpose":"maskable any"
+        },
+        {
+            "src":"favicon_512x512.png",
+            "type": "image/png",
+            "sizes":"512x512",
+            "purpose":"maskable any"
+        }
+    ]
+}
